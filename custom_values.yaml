@@ -230,10 +230,6 @@ dags:
     #revision: "HEAD"
     repoSubPath: "dags"
     syncWait: 60
-    # #httpSecretUsernameKey: "karimm1989"
-    # #httpSecretPasswordKey: "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"
-    # #sshSecret: "airflow-ssh-git-secret"
-    # #sshSecretKey: "id_rsa"
     maxFailures: 1
 
 ###################################
