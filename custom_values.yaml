@@ -226,14 +226,15 @@ dags:
   gitSync:
     enabled: true
     repo: "https://github.com/karimm1989/drilldags.git" #"git@github.com:Ardi-Karim_bcgprod/airflow-drillnext.git"
-    branch: "master"
-    revision: "HEAD"
+    #branch: "master"
+    #revision: "HEAD"
     repoSubPath: "dags"
-    syncWait: 120
-    
-    #sshSecret: "airflow-ssh-git-secret"
-    #sshSecretKey: "id_rsa"
-
+    syncWait: 60
+    # #httpSecretUsernameKey: "karimm1989"
+    # #httpSecretPasswordKey: "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"
+    # #sshSecret: "airflow-ssh-git-secret"
+    # #sshSecretKey: "id_rsa"
+    maxFailures: 1
 
 ###################################
 ## CONFIG | Kubernetes Ingress
